@@ -1,0 +1,113 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.header-nav {
+  @media (max-width: 1023px) {
+    background-color: #FBFBFB;
+    position: fixed;
+    top: 0;
+    left: -18px;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.header-nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
+
+.header-nav__li {
+  list-style-type: none;
+  a {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.header-nav__li--active {
+  position: relative;
+  &::after {
+    position: absolute;
+    top:  -4px;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+.burger-menu {
+  display: none;
+  @media (max-width: 1023px) {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    span {
+      position: absolute;
+      top: calc(50% - 1.5px);
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      border-radius: 8px;
+      transition: all .2s;
+      &:first-child {
+        top: 0;
+      }
+      &:last-child {
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &.active {
+      z-index: 10;
+      position: fixed;
+      top: auto;
+      right: 40px;
+      span {
+        background-color: black;
+        transform: scale(0);
+        &:first-child {
+          transform: rotate(-45deg);
+          top: calc(50% - 1.5px);
+        }
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: calc(50% - 1.5px);
+        }
+      }
+    }
+  }
+}
