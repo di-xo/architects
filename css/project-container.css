@@ -78,6 +78,9 @@
     left: 54px;
     color: #E0E0E0;
   }
+  .number__start {
+    color: #333;
+  }
   @media (max-width: 1023px) {
     display: none;
   }
@@ -85,20 +88,12 @@
 
 .project-container__right {
   position: relative;
-  @media (max-width: 1023px) {
-    display: none;
-  }
-  .project-container__right-btn {
+  .btn {
     position: absolute;
     bottom: 0;
     left: -1px;
-    border: none;
-    border-radius: 0;
-    width: 222px;
-    height: 72px;
-    background-color: white;
-    font-size: 12px;
-    color: #333333;
-    letter-spacing: 5px;
+  }
+  @media (max-width: 1023px) {
+    display: none;
   }
 }

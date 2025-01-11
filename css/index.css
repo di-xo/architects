@@ -263,6 +263,25 @@ h2 {
   font-weight: 300;
 }
 
+.btn {
+  border: none;
+  border-radius: 0;
+  width: 222px;
+  height: 72px;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.white-btn {
+  background-color: white;
+  color: #333333;
+}
+
+.dark-btn {
+  background-color: #333333;
+  color: white;
+}
+
 .arrow-in-btn {
   display: block;
   position: absolute;
