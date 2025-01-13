@@ -264,12 +264,13 @@ h2 {
 }
 
 .btn {
+  position: relative;
   border: none;
   border-radius: 0;
   width: 222px;
   height: 72px;
   font-size: 12px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .white-btn {
@@ -292,4 +293,8 @@ h2 {
   background-image: url(/img/ico-shape.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.arrow-in-btn-dark {
+  background-image: url(/img/ico-shape-white.svg);
 }

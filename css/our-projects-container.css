@@ -1,3 +1,74 @@
 .our-projects-container {
   margin-top: 100px;
+  @media (max-width: 1023px) {
+    h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  .dark-btn {
+    float: right;
+  }
 }
+
+.our-project {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  @media (max-width: 1023px) {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 30px -30px;
+    &::-webkit-scrollbar { 
+      display: none;  
+    }
+  }
+}
+
+.our-project__text-img {
+  position: absolute;
+  top: 48px;
+  left: 80px;
+  width: 414px;
+  height: 160px;
+  z-index: 5;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+  p {
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+  }
+}
+
+.our-project__img--active::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 570px;
+  height: 255px;
+  background-color: rgba(0, 0, 0, 0.699);
+  top: 0;
+  left: 0;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.btn-teg-a {
+  background-color: unset;
+  color: #FFFFFF;
+  width: 130px;
+  height: 24px;
+}
+
+.arrow-in-btn-teg-a {
+  background-image: url(/img/ico-shape-white.svg);
+  top: 8px;
+  left: 122px;
+}
+
