@@ -1,5 +1,8 @@
 .our-projects-container {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   @media (max-width: 1023px) {
     h2 {
       font-size: 40px;
@@ -7,7 +10,7 @@
     }
   }
   .dark-btn {
-    float: right;
+    margin-left: auto;
   }
 }
 
@@ -16,8 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 30px;
   @media (max-width: 1023px) {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -62,13 +64,14 @@
 .btn-teg-a {
   background-color: unset;
   color: #FFFFFF;
-  width: 130px;
+  width: 114px;
   height: 24px;
+  margin-top: 16px;
 }
 
 .arrow-in-btn-teg-a {
   background-image: url(/img/ico-shape-white.svg);
   top: 8px;
-  left: 122px;
+  left: 116px;
 }
 

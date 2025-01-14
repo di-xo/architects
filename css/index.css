@@ -271,6 +271,9 @@ h2 {
   height: 72px;
   font-size: 12px;
   letter-spacing: 3px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .white-btn {
