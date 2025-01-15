@@ -3,14 +3,20 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  .dark-btn {
+    margin-left: auto;
+  }
   @media (max-width: 1023px) {
     h2 {
       font-size: 40px;
       text-align: center;
     }
-  }
-  .dark-btn {
-    margin-left: auto;
+    .dark-btn {
+      width: 100%;
+      span {
+        display: none;
+      }
+    }
   }
 }
 
