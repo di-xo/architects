@@ -30,7 +30,10 @@
   background-color: #F3F3F3;
   border: none;
   padding: 0 21px;
-  color: #8D8D8D;
+  color: #333333;
+  &::placeholder {
+    color: #8D8D8D;
+  }
   @media (max-width: 1023px) {
     width: 100%;
   }
@@ -42,7 +45,7 @@
   padding-top: 14px;
   font-family: 'TT Hoves';
   font-size: 14px;
-  color: #8D8D8D;
+  color: #333333;
 }
 
 .agreement {
@@ -63,7 +66,7 @@
   width: 24px;
   height: 24px;
   accent-color: #F3F3F3;
-  transition: all 500ms ease;
+  transition: all 0.5ms ease;
   &:hover {
     cursor: pointer;
   }
