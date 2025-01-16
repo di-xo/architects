@@ -22,67 +22,9 @@
   }
 }
 
-.h {
-  p {
-    font-size: 64px;
-    font-weight: 700;
-  }
-  .h__silver {
-    font-weight: 300;
-    color: #BDBDBD;
-  }
-  @media (max-width: 1023px) {
-    p {
-      font-size: 36px;
-    }
-    .h__silver {
-      color: unset;
-    }
-  }
-}
-
 .arrow-btn {
-  display: flex;
-  gap: 20px;
-  button {
-    width: 54px;
-    height: 54px;
-    border-radius: 0;
-    background-color: white;
-    border: #F2F2F2 1px solid ;
-    background-image: url(/img/ico-shape_left.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .arrow-btn--active {
-    background-image: url(/img/ico-shape.svg);
-    background-color: #F9F9F9;
-  }
   @media (max-width: 1023px) {
     justify-content: space-between;
-  }
-}
-
-.number {
-  position: relative;
-  display: flex;
-  gap: 64px;
-  p {
-    font-size: 24px;
-    color: #BDBDBD;
-  }
-  .slash {
-    position: absolute;
-    font-size: 48px;
-    top: -10px;
-    left: 54px;
-    color: #E0E0E0;
-  }
-  .number__start {
-    color: #333;
-  }
-  @media (max-width: 1023px) {
-    display: none;
   }
 }
 
