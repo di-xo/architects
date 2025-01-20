@@ -1,0 +1,22 @@
+.sertificates-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.sertificates {
+  display: flex;
+  gap: 78px;
+  @media (max-width: 1023px) {
+    gap: 60px;
+    margin: 0 -30px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.counter {
+  margin-left: auto;
+}

@@ -7,9 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/header.css">
-
-
-  
+<link rel="stylesheet" href="/css/css-contacts/contacts.css">
   <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
@@ -45,12 +43,43 @@
     </div>
   </header>
   <main>
-
-
-
-
-
-
+<div class="contacts-section-container">
+  <div class="h">
+    <p class="h__silver">КОНТАКТНАЯ</p>
+    <p>ИНФОРМАЦИЯ</p>
+  </div>
+  <ul class="contacts-section__ul">
+    <li><span>«Digital Project»</span><br>г. Караганда, ул. Телевизионная 10</li>
+    <li><a href="tel:77017776811"><span>+7 (701) 77 76 811</span></a></li>
+    <li><a href="mailto:Galym.sultanov@mail.ru">Galym.sultanov@mail.ru</a></li>
+  </ul>
+  <button class="btn dark-btn">ОБРАТНАЯ СВЯЗЬ</button>
+  <div class="feedback-form">
+    <h4>Задать вопрос</h4>
+    <form class="feedback-form__form" action="post">
+      <input class="form-input" type="text" placeholder="Имя" name="name">
+      <input class="form-input" type="tel" placeholder="Номер телефона*" name="number">
+      <input class="form-input" type="text" placeholder="Email*" name="Email">
+      <input class="form-input" type="text" placeholder="Интересующий товар/услуга" name="product">
+      <textarea class="form-input form-input__textarea" placeholder="Сообщение*" name="massage" ></textarea>
+      <div class="agreement">
+        <input class="form-input__checkbox" type="checkbox" name="agreement" checked>
+        <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+      </div>
+      <button class="btn dark-btn post-btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
+  </div>
+  <div class="success-container">
+    <div class="success">
+      <div class="success__img">
+        <img src="/img/success.svg" alt="">
+      </div>
+      <h4>Спасибо !</h4>
+      <p>Ваше сообщение отправлено мы свяжемся с вами в ближайшее время</p>
+      <button class="btn dark-btn">ВЕРНУТСЯ НАЗАД</button>
+    </div>
+  </div>
+</div>
   </main>
   <footer>
     <div class="footer-container">
